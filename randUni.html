@@ -5,23 +5,29 @@
     <title>RandUni</title>
     <script src="scripts/randUni.js"></script>
     <link rel="stylesheet" href="style/randUni.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="scripts/jquery-3.1.1.min.js"></script>
 </head>
 <body>
 
-    <header class="site-header">
-        <nav class="site-nav">
-            <button class="randomize-btn">Рандомизирай</button>
+    <nav class="site-nav">
+        <button class="randomize-btn">Рандомизирай</button>
 
-            <ul class="header-navigation">
+        <div class="header-navigation">
+            <div class="drop-down">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <ul>
                 <li><a href="#">Начало</a></li>
                 <li><a href="#quote-section">Наков</a></li>
                 <li><a href="#programming-section">Програмиране</a></li>
                 <li><a href="#modules-section">Модули</a></li>
                 <li><a href="#enlist-section">Записване</a></li>
             </ul>
-        </nav>
+        </div>
+    </nav>
 
+    <header class="site-header">
         <section class="header-introduction">
             <h1>Добре дошли във РандУни</h1>
             <h3>Сайта в който думите са случайни и смисъла няма значение!</h3>
@@ -29,7 +35,6 @@
                 <a href="#enlist-section">Запишете се сега!</a>
             </div>
         </section>
-
     </header>
 
     <main>
@@ -61,7 +66,7 @@
         <section id="programming-section">
             <header class="programming-header">
 
-                <h1 class="color-heading">Какво е програмирането?</h1>
+                <h1 class="color-heading">Какво правят програмистите?</h1>
             </header>
             <article class="programming-info">
                 <p>
@@ -113,7 +118,7 @@
             <article class="programming-module">
                 <a href="https://softuni.bg/trainings/courses#professional-modules">
                     <div class="module-img">
-                        <img src="img/C_Sharp_wordmark.svg.png" alt="PHP-logo">
+                        <img src="img/C_Sharp_wordmark.svg.png" alt="C#-logo">
                     </div>
                     <div class="module-content">
                         <h1>C#</h1>
@@ -127,7 +132,7 @@
             <article class="programming-module">
                 <a href="https://softuni.bg/trainings/courses#professional-modules">
                     <div class="module-img">
-                        <img src="img/js.png" alt="PHP-logo">
+                        <img src="img/js.png" alt="JS-logo">
                     </div>
                     <div class="module-content">
                         <h1>Javascript</h1>
@@ -167,11 +172,9 @@
         </section>
     </main>
 
-
     <footer class="site-footer">
         <h1>Footer</h1>
     </footer>
-
 
     <script>startApp();</script>
 </body>
