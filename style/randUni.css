@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
 
 .random-word{
-    //font-size: 1.3em;
     color: #ffa500;
     font-style: italic;
 }
@@ -12,9 +11,7 @@
     padding: 0;
     word-wrap: break-word;
 }
-.site-header,#quote-section, #programming-section, #enlist-section, #modules-section, footer{
-    min-height: 200px;
-}
+
 body{
     font-family: 'Raleway',sans-serif;
     font-size: 15px;
@@ -68,6 +65,7 @@ body{
     color: #ffffff;
     width: 100%;
     display: block;
+    transition: all 0.2s;
 }
 .randomize-btn{
     border: none;
@@ -180,6 +178,7 @@ body{
     padding:100px ;
 
 }
+
 .quote-article{
 
     display: flex;
@@ -221,12 +220,9 @@ body{
     content: '\f10e';
 }
 .quote-img{
-    //width: 300px;
     flex: 1;
-
 }
 .quote-article img{
-    /*width: 100%;*/
     border-radius: 50%;
     border: 1px solid white;
     box-shadow: -1px 1px 42px 4px rgb(249, 253, 255);
@@ -235,6 +231,8 @@ body{
 }
 .quote-img img:hover{
     box-shadow: -1px 1px 147px 50px rgb(249, 253, 255);
+    transform: scale(1.1);
+    opacity: 0.9;
 }
 
 @media screen and (max-width: 920px) {
@@ -297,6 +295,7 @@ body{
     font-size: 2em;
     padding: 10px;
 }
+
 .programming-info{
     display: flex;
     align-items: flex-end;
@@ -315,6 +314,11 @@ body{
     //width: 80%;
     margin: 0 auto;
     text-align: center;
+}
+#modules-section .random-word{
+    font-weight: bold;
+    color: rgb(255, 239, 126);
+    text-shadow: 0 0 1px #ffea0c;
 }
 #modules-section a{
     text-decoration: none;
@@ -458,4 +462,35 @@ body{
 
 .site-footer{
     background-color: #2e2e2e;
+}
+.social-links{
+    height: 120px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-links li{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+.social-links li a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color:#ffffff;
+    color: #2e2e2e;
+    border-radius: 50%;
+    font-size: 2.5em;
+    line-height: 50px;
+    transition: all 0.3s;
+}
+.social-links li a:hover{
+    background-color: #6973af;
+    color: #ffffff;
 }
