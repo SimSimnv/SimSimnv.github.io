@@ -79,11 +79,12 @@ body{
     border-radius: 30px;
     outline: none;
     cursor: pointer;
+    transition: all 0.3s;
 }
 .randomize-btn:hover{
     box-shadow: 2px 1px 75px -9px rgba(255,255,255,1);
     background-color: yellow;
-    color: dodgerblue;
+    color:#275895;
 
 }
 @media screen and (max-width: 900px){
@@ -156,6 +157,7 @@ body{
     padding: 10px;
     border-radius: 20px;
     border: 5px solid transparent;
+    transition: all 0.2s;
 }
 .header-enlist-btn a:hover{
     background: transparent;
@@ -221,15 +223,18 @@ body{
 .quote-img{
     //width: 300px;
     flex: 1;
+
 }
 .quote-article img{
     /*width: 100%;*/
     border-radius: 50%;
     border: 1px solid white;
     box-shadow: -1px 1px 42px 4px rgb(249, 253, 255);
+    transition: all 0.5s;
+
 }
 .quote-img img:hover{
-    box-shadow: -1px 1px 147px 33px rgb(249, 253, 255);
+    box-shadow: -1px 1px 147px 50px rgb(249, 253, 255);
 }
 
 @media screen and (max-width: 920px) {
@@ -268,8 +273,9 @@ body{
         flex-wrap: wrap;
     }
     #programming-section .color-heading{
-        top: 4%;
+        top: 8%;
         left: 86%;
+        width: 70%;
     }
     #programming-section .programming-info{
         padding: 50px;
@@ -284,7 +290,6 @@ body{
     flex:1;
 }
 .color-heading{
-
     position: absolute;
     top: 93%;
     left: 6%;
@@ -331,8 +336,10 @@ body{
     border-radius:0 50px 0 50px;
     padding: 10px;
     box-sizing: border-box;
+    transition: all 0.3s;
 }
 .programming-module:hover{
+    transform: scale(1.1);
     background-color:rgb(252,136,72);
     box-shadow: 10px 10px 24px -6px rgba(0,0,0,0.75);
 }
@@ -409,6 +416,10 @@ body{
     text-align: center;
     height: 30px;
     outline: none;
+    transition: all 0.3s;
+}
+.enlist-row input:focus{
+    transform: scale(1.2);
 }
 .enlist-button-div{
     margin-top: 70px;
@@ -420,6 +431,7 @@ body{
     text-decoration: none;
     padding: 10px;
     font-size: 1.5em;
+    transition: all 0.3s;
 }
 .enlist-btn:hover{
     background-color: white;
