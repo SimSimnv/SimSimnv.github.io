@@ -179,13 +179,15 @@ body{
 
 }
 
-.quote-article{
+#quote-section .random-word{
+    text-shadow: 0 0 1px black;
+}
 
+.quote-article{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    //box-shadow: 0px 0px 24px 14px rgba(218,217,255,1);
     padding: 50px;
     color: #000000;
     background-color: rgba(10, 126, 185, 0.19);
@@ -260,9 +262,7 @@ body{
 /*PROGRAMMING-SECTION*/
 #programming-section{
     background: #2e2e2e;
-    //min-height: 400px;
     margin-bottom: 80px;
-
 }
 @media screen and (min-width: 920px) {
     #programming-section{
@@ -311,7 +311,6 @@ body{
 
 /*MODULES-SECTION*/
 #modules-section{
-    //width: 80%;
     margin: 0 auto;
     text-align: center;
 }
@@ -331,10 +330,6 @@ body{
     margin-bottom: 40px;
 }
 .programming-module{
-    /*display: inline-block;*/
-    /*width: 40%;*/
-    /*vertical-align: top;*/
-    //min-width: 300px;
     margin: 25px;
     background-color: rgb(243,105,30);
     border-radius:0 50px 0 50px;
@@ -351,7 +346,6 @@ body{
     background-color: rgb(243,105,30);
 }
 .module-img{
-    //float: left;
     width: 30%;
     height: 90px;
     background-color:rgb(252,136,72);
@@ -362,7 +356,7 @@ body{
 .module-img img{
     width: 60%;
 }
-.module-content h1{
+.module-content h2{
     font-size: 3em;
     font-weight: bold;
     letter-spacing: 2px;
@@ -398,7 +392,6 @@ body{
 }
 .enlist-form{
     border:10px solid white;
-    //min-height: 500px;
     width: 50%;
     margin: 0 auto;
     padding: 50px;
