@@ -1,4 +1,13 @@
 # Web-Fundamentals-Project
-A static web page made for the Softuni Web Fundamentals course assignment 
+A funny web page made for the Softuni Web Fundamentals course assignment 
 
-Link to live project: SimSimnv.github.io
+### Build with
+* HTML5
+* CSS3
+* jQuery
+
+### Features
+*	Responsive design
+* Word randomization
+
+Link to live project: https://simsimnv.github.io./
