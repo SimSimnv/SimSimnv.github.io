@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandUni</title>
+    <link rel="shortcut icon" href="img/question.ico" />
+    <script src="scripts/randUni.js"></script>
+    <link rel="stylesheet" href="style/randUni.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+
+<nav class="site-nav">
+    <button class="randomize-btn">Рандомизирай</button>
+
+    <div class="header-navigation">
+        <div class="drop-down">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <ul>
+            <li><a href="./">Начало</a></li>
+            <li><a href="./programming.html">Програмиране</a></li>
+            <li><a href="./enlist.html">Записване</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section id="enlist-section">
+        <form class="enlist-form">
+            <h1>Запиши се сега!</h1>
+            <div class="enlist-row">
+                <label>
+                    <span>Пълно Име:</span>
+                    <input type="text" name="name" placeholder="Въведи име...">
+                </label>
+            </div>
+            <div class="enlist-row">
+                <label>
+                    <span>IBAN:</span>
+                    <input type="text" name="name" placeholder="Въведи IBAN...">
+                </label>
+            </div>
+            <div class="enlist-row">
+                <label>
+                    <span>ПИН код:</span>
+                    <input type="password" name="name" placeholder="100% сигурност...">
+                </label>
+            </div>
+            <div class="enlist-button-div">
+                <a href="https://softuni.bg/apply" class="enlist-btn">Запиши се!</a>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <ul class="social-links">
+        <li><a href="https://bg-bg.facebook.com/SoftwareUniversity/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/softunibg?lang=bg"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/SimSimnv/SimSimnv.github.io"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    </ul>
+</footer>
+
+<script>startApp();</script>
+</body>
+</html>

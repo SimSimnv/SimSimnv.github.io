@@ -263,6 +263,7 @@ body{
 #programming-section{
     background: #2e2e2e;
     margin-bottom: 80px;
+    padding-top: 55px;
 }
 @media screen and (min-width: 920px) {
     #programming-section{
@@ -384,7 +385,7 @@ body{
 
 /*ENLIST-SECTION*/
 #enlist-section{
-    margin-top: 70px;
+    margin-top: 55px;
     text-align: center;
     background-color: #6973af;
     padding: 50px;
