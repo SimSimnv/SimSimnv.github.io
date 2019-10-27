@@ -456,6 +456,14 @@ body{
     }
 }
 
+/*FALLBACK-SECTION*/
+.fallback-section {
+    min-height: 70vh;
+}
+.fallback-section .enlist-form {
+    margin-top: 50px;
+}
+
 /*==================FOOTER=====================*/
 
 .site-footer{
