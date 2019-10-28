@@ -48,6 +48,11 @@ function startApp() {
     randomizeWords();
 }
 
+window.addEventListener('beforeinstallprompt', function (e) {
+    e.preventDefault();
+    e.prompt();
+});
+
 if('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js')
         .then((reg) => console.log('service worker registered', reg))
