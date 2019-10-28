@@ -46,12 +46,32 @@ function startApp() {
 
     $('.randomize-btn').on('click',randomizeWords);
     randomizeWords();
+
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', e => {
+        e.preventDefault();
+        deferredPrompt = e
+    });
+
+    const btnInstallApp = document.getElementById('btn-install-app');
+    if(btnInstallApp) {
+        btnInstallApp.addEventListener('click', e => {
+            e.preventDefault();
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice
+                .then(choiceResult => {
+                    if(choiceResult.outcome === 'accepted') {
+                        console.log('user accepted A2HS prompt')
+                    } else {
+                        console.log('user dismissed A2HS prompt')
+                    }
+                    deferredPrompt = null
+                })
+        })
+    }
 }
 
-window.addEventListener('beforeinstallprompt', function (e) {
-    e.preventDefault();
-    e.prompt();
-});
+
 
 if('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js')
